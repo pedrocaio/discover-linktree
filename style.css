@@ -117,24 +117,6 @@ body * {
   background: var(--outline-hover);
   transition: 0.5s;
 }
-#social-links {
-  padding: 24px;
-  display: flex;
-  justify-content: center;
-  gap: 16px;
-  font-size: 24px;
-}
-#social-links a {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  padding: 8px;
-  border-radius: 50%;
-}
-#social-links a:hover {
-  background: var(--outline-hover);
-  transition: 0.5s;
-}
 footer {
   display: flex;
   flex-direction: column;
