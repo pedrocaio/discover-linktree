@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="pt-br">
+<html lang="pt-br" class="">
   <head>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
@@ -16,8 +16,14 @@
   <body>
     <div id="container">
       <div id="profile">
-        <a href=""><img src="./assets/logo-dark.png" alt="Logo básica da Webhelp" /></a>
-        <p>Portais Webhelp</p>
+        <a href=""
+          ><img src="./assets/logo-dark.png" alt="Logo básica da Webhelp"
+        /></a>
+        <p id="title">Portais Webhelp - Produção</p>
+      </div>
+      <div id="switch" onclick="toggleMode()">
+        <button></button>
+        <span></span>
       </div>
       <ul id="portals">
         <li>
@@ -56,35 +62,38 @@
         ></a>
       </div>
       <footer>
-        <p>Em caso de dúvidas ou problemas, entrar em contato com o time de Suporte!</p>
+        <p>
+          Em caso de dúvidas ou problemas, entrar em contato com o time de
+          Suporte!
+        </p>
         <ul>
           <li>
-            <a href="">
-              <img src="./assets/andressa.png" alt="">
+            <a href="https://wa.me/5541997706882" target="_blank">
+              <img src="./assets/andressa.png" alt="" />
               Andressa
             </a>
           </li>
           <li>
-            <a href="">
-              <img src="./assets/luana.png" alt="">
+            <a href="https://wa.me/5541999652857" target="_blank">
+              <img src="./assets/luana.png" alt="" />
               Luana
             </a>
           </li>
           <li>
-            <a href="">
-              <img src="./assets/pedro.png" alt="">
-              Pedro             
+            <a href="https://wa.me/5541998395876" target="_blank">
+              <img src="./assets/pedro.png" alt="" />
+              Pedro
             </a>
           </li>
           <li>
-            <a href="">
-              <img src="./assets/gabriella.png" alt="">
+            <a href="https://wa.me/5541995060984" target="_blank">
+              <img src="./assets/gabriella.png" alt="" />
               Gabriella
             </a>
           </li>
           <li>
-            <a href="">
-              <img src="./assets/angelo.png" alt="">
+            <a href="https://wa.me/5541936180738" target="_blank">
+              <img src="./assets/angelo.png" alt="" />
               Angelo
             </a>
           </li>
@@ -99,5 +108,6 @@
       nomodule
       src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"
     ></script>
+    <script src="./script.js"></script>
   </body>
 </html>
