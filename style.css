@@ -5,29 +5,31 @@
 }
 :root {
   --text-color: white;
-  --br-url: url(./assets/bg-mobile-dark.jpg);
+  --bg-url: url(./assets/bg-mobile-dark.jpg);
   --outline-hover: rgb(255, 255, 255, 0.1);
   --border-color: rgb(255, 255, 255, 0.5);
   --li-bg-color: rgb(255, 255, 255, 0.05);
-  --switch-bg-url: url(./assets/moon.svg)
+  --switch-bg-url: url(./assets/moon.svg);
 }
 .homolog {
   --text-color: black;
-  --br-url: url(./assets/bg-mobile-light.jpg);
+  --bg-url: url(./assets/bg-mobile-light.jpg);
   --outline-hover: rgb(0, 0, 0, 0.1);
   --border-color: rgb(0, 0, 0, 0.5);
   --li-bg-color: rgb(0, 0, 0, 0.05);
-  --switch-bg-url: url(./assets/sun.svg)
+  --switch-bg-url: url(./assets/sun.svg);
 }
 body {
-  background: var(--br-url) no-repeat top center/cover;
+  background: var(--bg-url) no-repeat top center/cover;
+  height: 100vh;
 }
 body * {
   font-family: "Inter", sans-serif;
   color: var(--text-color);
 }
 #container {
-  width: 720px;
+  width: 100%;
+  max-width: 588px;
   margin: auto;
 }
 #profile {
@@ -67,12 +69,14 @@ body * {
   z-index: 1;
   transform: translateY(-50%);
   top: 50%;
-  box-shadow: 0px 2px 8px 0px rgba(0, 0, 0, 0.10);
+  box-shadow: 0px 2px 8px 0px rgba(0, 0, 0, 0.1);
   outline: 6px solid transparent;
+  transition: all 0.2s;
+  animation: slide-out 0.5s;
 }
 .homolog #switch button {
-  right: 0;
-  left: initial;
+  animation: slide-in 0.5s forwards;
+  left: 50%;
 }
 #switch button:hover {
   outline: 6px solid var(--outline-hover);
@@ -91,7 +95,7 @@ body * {
   list-style: none;
   display: flex;
   flex-wrap: wrap;
-  column-count: 2;
+  align-items: center;
   justify-content: center;
   gap: 8px;
 }
@@ -165,4 +169,28 @@ footer ul li a img {
 footer ul li a:hover img {
   outline: 6px solid var(--outline-hover);
   transition: 0.5s;
+}
+@media (min-width: 700px) {
+  :root {
+    --bg-url: url(./assets/bg-dark.jpg);
+  }
+  .homolog {
+    --bg-url: url(./assets/bg-light.jpg);
+  }
+}
+@keyframes slide-in {
+  from {
+    left: 0;
+  }
+  to {
+    left: 50%;
+  }
+}
+@keyframes slide-out {
+  from {
+    left: 50%;
+  }
+  to {
+    left: 0;
+  }
 }
