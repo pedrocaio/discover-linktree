@@ -10,6 +10,7 @@
   --border-color: rgb(255, 255, 255, 0.5);
   --li-bg-color: rgb(255, 255, 255, 0.05);
   --switch-bg-url: url(./assets/moon.svg);
+  --column-list: column;
 }
 .homolog {
   --text-color: black;
@@ -18,6 +19,7 @@
   --border-color: rgb(0, 0, 0, 0.5);
   --li-bg-color: rgb(0, 0, 0, 0.05);
   --switch-bg-url: url(./assets/sun.svg);
+  --column-list: column;
 }
 body {
   background: var(--bg-url) no-repeat top center/cover;
@@ -95,12 +97,14 @@ body * {
   list-style: none;
   display: flex;
   flex-wrap: wrap;
+  flex-direction: var(--column-list);
   align-items: center;
   justify-content: center;
   gap: 8px;
 }
 #portals li {
   width: calc(50% - 10px);
+  min-width: 260px;
   border: 1px solid var(--border-color);
   background: var(--li-bg-color);
   border-radius: 8px;
@@ -155,9 +159,11 @@ footer ul li a:hover img {
 @media (min-width: 700px) {
   :root {
     --bg-url: url(./assets/bg-dark.jpg);
+    --column-list: 0;
   }
   .homolog {
     --bg-url: url(./assets/bg-light.jpg);
+    --column-list: 0;
   }
 }
 @keyframes slide-in {
