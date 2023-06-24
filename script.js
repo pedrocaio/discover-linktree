@@ -8,6 +8,7 @@ function toggleMode() {
   const atacadao = document.getElementById("atacadao")
   const carrefour = document.getElementById("carrefour")
   const natura = document.getElementById("natura")
+  const oi = document.getElementById("oi")
 
   html.classList.toggle("homolog")
 
@@ -29,6 +30,10 @@ function toggleMode() {
       "https://hml.regularize.servicesdigital.com.br/"
     )
     natura.setAttribute("href", "https://hml.negocienaturaeavon.com.br/")
+    oi.setAttribute(
+      "href",
+      "https://homologvalidaendereco.servicesdigital.com.br/"
+    )
   } else {
     title.textContent = "Portais Webhelp - Produção"
     tim.setAttribute("href", "https://timnegocia.com.br/")
@@ -41,5 +46,6 @@ function toggleMode() {
       "https://cartaocarrefour.servicesdigital.com.br/access"
     )
     natura.setAttribute("href", "https://negocienaturaeavon.com.br/")
+    oi.setAttribute("href", "https://oicadastro.com.br/")
   }
 }
