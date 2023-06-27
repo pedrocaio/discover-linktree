@@ -26,6 +26,6 @@ Esse projeto está sob a licença MIT.
 <br>
 
 <p align="center">
-  <img alt="projeto DevLinks" src=".github/linktree.jpg" width="70%">
-  <img alt="projeto DevLinks" src=".github/linktree-light.jpg" width="70%">
+  <img alt="projeto linktree" src=".github/linktree.jpg" width="70%">
+  <img alt="projeto linktree light" src=".github/linktree-light.jpg" width="70%">
 </p>
