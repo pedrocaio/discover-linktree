@@ -8,12 +8,13 @@ function toggleMode() {
   const atacadao = document.getElementById("atacadao")
   const carrefour = document.getElementById("carrefour")
   const natura = document.getElementById("natura")
-  const oi = document.getElementById("oi")
+  const boticarioColombia = document.getElementById("boticarioColombia")
+  const quintoAndar = document.getElementById("quintoAndar")
 
   html.classList.toggle("homolog")
 
   if (html.classList.contains("homolog")) {
-    title.textContent = "Portais Webhelp - Homologação"
+    title.textContent = "Portais Concentrix - Homologação"
     tim.setAttribute(
       "href",
       "https://homologtimnegocia.servicesdigital.com.br/"
@@ -30,10 +31,11 @@ function toggleMode() {
       "https://hml.regularize.servicesdigital.com.br/"
     )
     natura.setAttribute("href", "https://hml.negocienaturaeavon.com.br/")
-    oi.setAttribute(
+    quintoAndar.setAttribute(
       "href",
-      "https://homologvalidaendereco.servicesdigital.com.br/"
+      "https://hml.negociequintoandar.com.br/"
     )
+    boticarioColombia.setAttribute("href", "https://boticario-colombia-hml.engenhariapoc-wh.com/")
   } else {
     title.textContent = "Portais Webhelp - Produção"
     tim.setAttribute("href", "https://timnegocia.com.br/")
@@ -46,6 +48,13 @@ function toggleMode() {
       "https://cartaocarrefour.servicesdigital.com.br/access"
     )
     natura.setAttribute("href", "https://negocienaturaeavon.com.br/")
-    oi.setAttribute("href", "https://oicadastro.com.br/")
+    quintoAndar.setAttribute(
+      "href",
+      "https://negociequintoandar.com.br"
+    )
+    boticarioColombia.setAttribute(
+      "href",
+      "https://regularizagrupooboticario.com/"
+    )
   }
 }
