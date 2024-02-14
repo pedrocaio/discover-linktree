@@ -37,7 +37,7 @@ function toggleMode() {
     )
     boticarioColombia.setAttribute("href", "https://boticario-colombia-hml.engenhariapoc-wh.com/")
   } else {
-    title.textContent = "Portais Webhelp - Produção"
+    title.textContent = "Portais Concentrix - Produção"
     tim.setAttribute("href", "https://timnegocia.com.br/")
     claro.setAttribute("href", "https://claronegocie.com.br/")
     boticario.setAttribute("href", "https://regularizaboti.com.br/")
