@@ -135,7 +135,7 @@ footer, section p {
   text-align: center;
 }
 section p {
-  padding: 12px;
+  padding: 24px 12px 12px;
 }
 footer ul {
   display: flex;
