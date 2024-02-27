@@ -173,6 +173,9 @@ footer ul li a:hover img {
     --bg-url: url(./assets/bg-light.jpg);
     --column-list: 0;
   }
+  body {
+    height: 100%;
+  }
 }
 @keyframes slide-in {
   from {
