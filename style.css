@@ -92,7 +92,7 @@ body * {
   background: var(--li-bg-color);
   border-radius: 9999px;
 }
-#portals {
+#portals, #domains {
   padding: 24px;
   list-style: none;
   display: flex;
@@ -102,32 +102,40 @@ body * {
   justify-content: center;
   gap: 8px;
 }
-#portals li {
+#domains {
+  padding: 12px 12px 24px;
+}
+#portals li, #domains li {
   width: calc(50% - 10px);
   min-width: 260px;
   border: 1px solid var(--border-color);
   background: var(--li-bg-color);
   border-radius: 8px;
 }
-#portals li a {
+#portals li a, #domains li a {
   display: flex;
   justify-content: center;
   padding: 12px 24px;
   font-weight: 500;
   text-decoration: none;
 }
-#portals li:hover {
+#portals li:hover, #domains li:hover {
   border: 1.5px solid var(--text-color);
   background: var(--outline-hover);
   transition: 0.5s;
 }
-footer {
+.divider {
+  border: 1.5px solid var(--border-color);
+}
+footer, section p {
   display: flex;
   flex-direction: column;
   gap: 24px;
   padding: 24px;
-  font-size: 12px;
   text-align: center;
+}
+section p {
+  padding: 12px;
 }
 footer ul {
   display: flex;
