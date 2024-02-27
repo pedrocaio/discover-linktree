@@ -23,7 +23,7 @@
 }
 body {
   background: var(--bg-url) no-repeat top center/cover;
-  height: 100vh;
+  height: 100%;
 }
 body * {
   font-family: "Inter", sans-serif;
@@ -172,9 +172,6 @@ footer ul li a:hover img {
   .homolog {
     --bg-url: url(./assets/bg-light.jpg);
     --column-list: 0;
-  }
-  body {
-    height: 100%;
   }
 }
 @keyframes slide-in {
